@@ -3,13 +3,13 @@ import {getPersonas, createPersona, updatePersona, deletePersona, getPersona, ge
 
 const router = Router();
 
-router.get('/persona', getPersonas);
-router.post('/persona', createPersona);
-router.put('/persona/:personaid', updatePersona);
-router.delete('/persona/:personaid', deletePersona);
+router.get('/persona/api', getPersonas);
+router.post('/persona/api', createPersona);
+router.put('/persona/api/:personaid', updatePersona);
+router.delete('/persona/api/:personaid', deletePersona);
 
-router.get('/persona/:personaid', getPersona);
+router.get('/persona/api/:personaid', getPersona);
 
-router.get('/persona/:personaid/publicacion', getPersonaPublicaciones);
+router.get('/persona/api/:personaid/publicacion', getPersonaPublicaciones);
 
 export default router;
